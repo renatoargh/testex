@@ -1,7 +1,8 @@
-var app = require('express')();
+var app = require('express')(),
+    os = require("os");
 
 app.get('/', function(req, res) {
-    res.end('TESTEX!');
+    res.end('HOST: ' + os.hostname());
 });
 
 app.listen(80);
