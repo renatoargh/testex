@@ -3,7 +3,7 @@ var app = require('express')(),
 
 app.get('/', function(req, res) {
     res.end([
-        'DATE: ' + new Date().toIsoString(),
+        'DATE: ' + new Date().toISOString(),
         'HOST: ' + os.hostname()
     ].join('\n'));
 });
